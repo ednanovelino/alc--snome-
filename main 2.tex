@@ -10,6 +10,7 @@
 \usepackage{amsmath, amsfonts, amssymb}
 \usepackage{tensor}
 \usepackage [utf8] {inputenc}
+\usepackage{mathtools}
 
 
 
@@ -59,11 +60,35 @@ Rio de Janeiro, RJ \\
 \newpage
 \begin{flushleft}
 \section{Introdução}
+\footnote{Nota 1. }
+
+\subsection{Expressões Matemáticas}
+
+    $$\mathbf{x + y = z^{2}}$$ \\
+    $(x + y = z_{2})$ %_ é subescrito
+
+    $$\sum_{n=0}^{\infty} x^{n}$$ % add \displaystule\sum_(i=0)%
+
+\subsection{Ambiente Array e eqnarray}
+    $$ \begin{array} {|c|c|} \hline 
+    \alpha + B = D & y=x \hline \\ % & próxima coluna% 
+    j +p =1 & \beta^{3} +\gama \hline \\
+    \end{array} $$
+    
+    
 
 \newpage
 \section{Desenvolvimento}
 \begin{enumerate} %P/ especificar os índices, inserir [a/I].
 \item item 1
+\begin{equation}
+    \begin{bmatrix}
+        x_{11} & x_{12} & x_{13} & \dots & x_{1n} \\
+        x_{21} & x_{22} & x_{23} & \dots & x_{2n} \\
+        x_{31} & x_{32} & x_{33} & \dots & x_{3n} \\
+    \end{bmatrix}
+\end{equation}
+
 \item item 2
 \end{enumerate}
 
